@@ -4,7 +4,10 @@
 namespace App\Http\Controllers;
 
 
-class HelloWorldController
+class HelloWorldController extends Controller
 {
-
+    public function getHelloWorld()
+    {
+        return view('helloWorld');
+    }
 }
